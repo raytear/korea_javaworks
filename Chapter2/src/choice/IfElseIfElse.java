@@ -1,0 +1,39 @@
+package choice;
+
+import java.util.Scanner;
+
+/*
+	@ 학점 계산 프로그램
+	  90 ~ 100점 : A
+	  80 ~ 89점 : B
+	  70 ~ 79점 : C
+	  70점 미만 : F  
+ */
+
+public class IfElseIfElse {
+
+	public static void main(String[] args) {
+		// 다중 조건문
+		// 논리 연산자 - &&, ||, !
+		Scanner scan = new Scanner(System.in); //입력객체 scan 생성
+		//int score = 86;
+		
+		System.out.print("점수를 입력하세요: ");
+		int score = scan.nextInt(); //사용자 입력
+		char grade = ' '; //한 문자를 저장할 변수 grade 선언, ' '는 공백문자
+		
+		if(score >= 90 && score <= 100) {
+			grade = 'A';
+		}else if(score >= 80) {
+			grade = 'B';
+		}else if(score >= 70) {
+			grade = 'C';
+		}else {
+			grade = 'F';
+		}		
+		
+		System.out.println("학점은 " + grade + "입니다.");
+
+	}
+
+}

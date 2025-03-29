@@ -1,0 +1,16 @@
+package choice;
+
+public class ifElseEx1 {
+
+	public static void main(String[] args) {
+		// 조건문 - if문
+		// 나이가 15세 이상이면 "관람가" 출력
+		int age = 17;
+		
+		if(age >= 15) {
+			System.out.println("관람가");
+		}
+
+	}
+
+}

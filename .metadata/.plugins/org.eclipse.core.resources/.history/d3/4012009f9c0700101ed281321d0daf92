@@ -1,0 +1,15 @@
+package operator;
+
+public class OperatorEx1 {
+
+	public static void main(String[] args) {
+		// 변수값 교환
+		int x = 0;
+		int y = 1;
+		
+		System.out.println("***** 교환 전 *****");
+		System.out.println("x = " + x + ", y = " + y);
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package operator;
+
+public class OperatorEx2 {
+
+	public static void main(String[] args) {
+		System.out.println("*** 비교 연산 ***");
+		// "==" : 같다, "!=" 같지 않다
+		int n1 = 10, n2 = 20;
+		
+		System.out.println(n1 >= n2);
+		System.out.println(n1 <= n2);
+		System.out.println(n1 == n2);
+		System.out.println(n1 != n2);
+		
+		System.out.println("*** 논리 연산 ***");
+		//"&&" - 두 조건이 모두 참
+		System.out.println((n1 <= n2) && (n1 == n2));
+		//"||" - 두 조건 중 하나만 참이어도 참
+		System.out.println((n1 <= n2) || (n1 == n2));
+		//"!" - 논리 부정(조건이 참이면 거짓, 거짓이면 참)
+		System.out.println(!(n1 == n2));
+		
+		System.out.println("*** 복합 대입 연산 ***");
+		int num3 = 10;
+		
+		System.out.println(num3 += 2); //num3 = num3 + 2
+		System.out.println(num3 -= 2); //num3 = num3 - 2
+		
+		
+	}
+
+}

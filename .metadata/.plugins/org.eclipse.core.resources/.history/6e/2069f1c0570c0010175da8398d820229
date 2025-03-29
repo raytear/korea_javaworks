@@ -1,0 +1,18 @@
+package loop;
+
+public class WhileEx2 {
+
+	public static void main(String[] args) {
+		// 반복 조건문(while ~ if ~ break)
+		//1부터 10까지 출력
+		int n = 1;
+		while(true) {
+			if(n > 10)
+				break;
+			System.out.println(n);
+			n++;
+		}
+
+	}
+
+}
