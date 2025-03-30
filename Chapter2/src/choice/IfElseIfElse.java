@@ -34,6 +34,7 @@ public class IfElseIfElse {
 		
 		System.out.println("학점은 " + grade + "입니다.");
 
+		scan.close();
 	}
 
 }
