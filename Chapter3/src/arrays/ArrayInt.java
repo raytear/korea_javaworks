@@ -31,10 +31,6 @@ public class ArrayInt {
 		//요소 수정
 		number[2] = 100; //100을 대입 - 수정
 		
-		for(int i=0; i<number.length; i++) {
-			System.out.print(number[i] + " ");
-		}
-		
 		//전체 출력
 		for(int i=0; i<number.length; i++) {
 			System.out.print(number[i] + " ");
