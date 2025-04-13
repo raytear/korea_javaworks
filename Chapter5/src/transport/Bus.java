@@ -18,7 +18,7 @@ public class Bus {
 	
 	//버스의 정보를 출력하는 메서드
 	public void busInfo() {
-		System.out.println(busNumber + "번 버스의 수입은" + money + 
+		System.out.println(busNumber + "번 버스의 수입은 " + money + 
 				"원이고, 승객 수는 " + passenger + "명 입니다.");
 	}
 
