@@ -1,4 +1,4 @@
-package reference;
+package reference.circle;
 
 //Point - 점(좌표)을 추상화한 클래스
 public class Point {
