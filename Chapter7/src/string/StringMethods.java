@@ -38,7 +38,23 @@ public class StringMethods {
 		System.out.println("생년월일: " + firstNum);
 		
 		String secondNum = jumin.substring(7);
-		System.out.println("주민번호 뒷자리: " + secondNum);		
+		System.out.println("주민번호 뒷자리: " + secondNum);
+		
+		//indexOf(문자열) - 문자열이 시작되는 위치를 리턴하는 메서드
+		//못 찾으면 -1이 리턴됨
+		String subject = "자바 프로그래밍 입문";
+		int location1 = subject.indexOf("프로그래밍");
+		System.out.println(location1); //3
+		
+		int location2 = subject.indexOf("코딩");
+		System.out.println(location2); //-1
+		
+		//문자열을 검색하는 프로그램
+		if(subject.indexOf("자바") != -1) {
+			System.out.println("자바와 관련된 책이군요!!");
+		}else {
+			System.out.println("자바와 관련이 없는 책이군요!!");
+		}
 	}
 
 }

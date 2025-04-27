@@ -13,7 +13,7 @@ public class BookTest {
 		Book book = new Book(100, "채식주의자");
 		System.out.println(book);
 		System.out.println(book.toString());
-
+		
 	}
 
 }
