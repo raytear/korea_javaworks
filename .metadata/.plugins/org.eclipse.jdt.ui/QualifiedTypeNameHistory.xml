@@ -5,5 +5,16 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="interfaces.remote_control.Searchable"/>
     <fullyQualifiedTypeName name="interfaces.remote_control.RemoteControl"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.PlayerLevel"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.AdvancedLevel"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.SuperLevel"/>
+    <fullyQualifiedTypeName name="interfaces.scheduler.Scheduler"/>
+    <fullyQualifiedTypeName name="interfaces.scheduler.RoundRobin"/>
+    <fullyQualifiedTypeName name="interfaces.scheduler.LeastJob"/>
+    <fullyQualifiedTypeName name="interfaces.scheduler.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>
