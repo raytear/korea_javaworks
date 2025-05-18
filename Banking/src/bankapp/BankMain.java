@@ -3,6 +3,7 @@ package bankapp;
 import java.util.Scanner;
 
 public class BankMain {
+	//전역 공간
 	// BankAccount 객체 배열 100개 생성
 	static BankAccount[] accounts = new BankAccount[100];
 	static Scanner scan = new Scanner(System.in);
