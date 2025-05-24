@@ -1,4 +1,6 @@
-package member;
+package member.list;
+
+import member.Member;
 
 public class MemberArrayListTest {
 

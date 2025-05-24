@@ -1,6 +1,8 @@
-package member;
+package member.list;
 
 import java.util.ArrayList;
+
+import member.Member;
 
 //회원을 관리(추가, 조회, 삭제)하는 클래스
 public class MemberArrayList {
