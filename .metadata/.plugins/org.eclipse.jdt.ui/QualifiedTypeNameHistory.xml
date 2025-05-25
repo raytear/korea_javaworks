@@ -20,4 +20,6 @@
     <fullyQualifiedTypeName name="collection.stack.StackTest"/>
     <fullyQualifiedTypeName name="interfaces.innerInterface.Button.OnClickListener"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
 </qualifiedTypeNameHistroy>
