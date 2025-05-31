@@ -1,4 +1,4 @@
-package writer_read;
+package text_file;
 
 import java.io.FileWriter;
 import java.io.IOException;
