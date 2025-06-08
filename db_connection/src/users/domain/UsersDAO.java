@@ -72,4 +72,61 @@ public class UsersDAO {
 		
 		return userList; //userList 반환해 줌
 	}
+	
+	//회원 상세 보기(1건 보기)
+	public Users getUser(String userId) {
+		String sql = "SELECT * FROM users WHERE userid = ?";
+		Users user = new Users(); //검색 결과를 보여줄 user 객체
+		
+		try(Connection conn = DriverManager.getConnection(url, username, password);
+			PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, userId);
+			
+			try(ResultSet rs = pstmt.executeQuery()){ //검색된 자료 객체 생성
+				if(rs.next()) { //검색된 자료가 있으면
+					user.setUserId(rs.getString("userid"));
+					user.setUserPassword(rs.getString("userpassword"));
+					user.setUserName(rs.getString("username"));
+					user.setUserAge(rs.getInt("userage"));
+				}
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+	
+	//회원 수정
+	public void updateUser(Users user) {
+		String sql = "UPDATE users SET userpassword = ?, username = ?, userage = ?"
+				+ "WHERE userid = ?";
+		
+		try(Connection conn = DriverManager.getConnection(url, username, password);
+			PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, user.getUserPassword());
+			pstmt.setString(2, user.getUserName());
+			pstmt.setInt(3, user.getUserAge());
+			pstmt.setString(4, user.getUserId());
+			
+			pstmt.execute(); //sql 실행
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	//회원 삭제
+	public void deleteUser(String userId) {
+		String sql = "DELETE FROM users WHERE userId = ?";
+		
+		try(Connection conn = DriverManager.getConnection(url, username, password);
+			PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, userId);
+						
+			pstmt.execute(); //sql 실행
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }
